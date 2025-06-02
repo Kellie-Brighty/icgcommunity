@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interchains Group</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" href="logo.jpg" type="image/jpeg" />
+  </head>
+  <body>
+    <div class="particles-container" id="particles-js"></div>
+
+    <header>
+      <div class="logo">
+        <img src="logo.jpg" alt="Interchains Group Logo" class="logo-img" />
+        <h1>Interchains Group</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#reserves">Reserves</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#tokenomics">Tokenomics</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="glitch-text">Interchains Group</h1>
+        <p class="subtitle">
+          Fifth most actively traded company with over 7,000 ETH in strategic
+          reserves
+        </p>
+
+        <div class="ca-container">
+          <div class="ca-box">
+            <span id="contract-address">0x0000000000000000000000000000000000000000</span>
+            <button id="copy-ca" class="copy-btn">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
+          <div id="copy-message">Copied!</div>
+        </div>
+
+        <div class="button-container">
+          <a href="#" class="btn primary-btn">View Chart</a>
+          <a href="#tokenomics" class="btn secondary-btn">Tokenomics</a>
+        </div>
+
+        <div class="social-links">
+          <a
+            href="https://t.me/interchainsgroupeth"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fab fa-telegram"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-discord"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-medium"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-graphics">
+        <div class="eth-logo"></div>
+        <div class="custom-logo">
+          <img src="logo.jpg" alt="Interchains Group Logo" class="floating-logo" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About Interchains Group</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Interchains Group of Recent is the fifth most actively traded company
+              and holds over 7,000 ETH in strategic reserves, highlighting its
+              commitment to blockchain innovation and long-term asset
+              diversification.
+            </p>
+            <p>
+              Our mission is to bridge various blockchain ecosystems, creating
+              seamless interconnectivity and enhancing cross-chain functionality
+              for users across the decentralized landscape.
+            </p>
+            <div class="stats-container">
+              <div class="stat-item">
+                <div class="stat-value">5th</div>
+                <div class="stat-label">Most Traded</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">7K+</div>
+                <div class="stat-label">ETH Reserves</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">24/7</div>
+                <div class="stat-label">Support</div>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="banner.jpg" alt="Interchains Group" class="floating-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reserves" class="reserves-section">
+      <div class="container">
+        <h2 class="section-title">Strategic Reserves</h2>
+        <div class="reserves-content">
+          <div class="reserves-info">
+            <div class="reserves-counter">
+              <div class="counter-value" data-target="7000">0</div>
+              <div class="counter-symbol">ETH</div>
+            </div>
+            <p>
+              Our strategic ETH holdings demonstrate our long-term commitment to
+              blockchain technology and provide a foundation for sustainable growth
+              and development.
+            </p>
+            <ul class="reserves-benefits">
+              <li><i class="fas fa-shield-alt"></i> Enhanced project stability</li>
+              <li><i class="fas fa-chart-line"></i> Long-term growth potential</li>
+              <li><i class="fas fa-code-branch"></i> Support for ecosystem development</li>
+              <li><i class="fas fa-layer-group"></i> Diversified asset strategy</li>
+            </ul>
+          </div>
+          <div class="reserves-chart">
+            <div class="chart-container">
+              <canvas id="reservesChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features-section">
+      <div class="container">
+        <h2 class="section-title">Key Features</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-link"></i>
+            </div>
+            <h3>Cross-Chain Integration</h3>
+            <p>Seamlessly connect and interact with multiple blockchain networks through our advanced integration protocols.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Enhanced Security</h3>
+            <p>Industry-leading security measures protect your assets and transactions across all supported chains.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3>Lightning Fast Transactions</h3>
+            <p>Experience minimal latency with our optimized transaction protocols and network infrastructure.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Smart Contract Innovation</h3>
+            <p>Advanced smart contract capabilities that enable complex, cross-chain decentralized applications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="roadmap-section">
+      <div class="container">
+        <h2 class="section-title">Development Roadmap</h2>
+        <div class="roadmap-timeline">
+          <div class="roadmap-item completed">
+            <div class="roadmap-date">Q1 2025</div>
+            <div class="roadmap-content">
+              <h3>Project Launch</h3>
+              <p>Initial platform release, strategic partnerships formation, and community building.</p>
+            </div>
+          </div>
+          <div class="roadmap-item completed">
+            <div class="roadmap-date">Q2 2025</div>
+            <div class="roadmap-content">
+              <h3>Core Protocol Development</h3>
+              <p>Enhancement of cross-chain functionality and security infrastructure implementation.</p>
+            </div>
+          </div>
+          <div class="roadmap-item active">
+            <div class="roadmap-date">Q3 2025</div>
+            <div class="roadmap-content">
+              <h3>Ecosystem Expansion</h3>
+              <p>Addition of new blockchain integrations and third-party dApp support.</p>
+            </div>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-date">Q4 2025</div>
+            <div class="roadmap-content">
+              <h3>Governance Implementation</h3>
+              <p>Launch of decentralized governance mechanisms and community voting system.</p>
+            </div>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-date">Q1 2025</div>
+            <div class="roadmap-content">
+              <h3>Enterprise Solutions</h3>
+              <p>Development of enterprise-grade products and institutional partnerships.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tokenomics" class="tokenomics-section">
+      <div class="container">
+        <h2 class="section-title">Tokenomics</h2>
+        <div class="tokenomics-content">
+          <div class="tokenomics-info">
+            <h3>Token Distribution</h3>
+            <p>The Interchains Group token has been strategically distributed to ensure long-term sustainability and growth:</p>
+            <ul class="tokenomics-list">
+              <li><span>35%</span> Public Sale & Liquidity</li>
+              <li><span>25%</span> Ecosystem Development</li>
+              <li><span>15%</span> Team & Advisors (Locked)</li>
+              <li><span>10%</span> Strategic Partnerships</li>
+              <li><span>10%</span> Marketing & Community</li>
+              <li><span>5%</span> Reserve Fund</li>
+            </ul>
+          </div>
+          <div class="tokenomics-chart">
+            <canvas id="tokenomicsChart"></canvas>
+          </div>
+        </div>
+        <div class="token-details">
+          <div class="token-detail-item">
+            <h4>Total Supply</h4>
+            <p>1,000,000,000</p>
+          </div>
+          <div class="token-detail-item">
+            <h4>Circulation</h4>
+            <p>350,000,000</p>
+          </div>
+          <div class="token-detail-item">
+            <h4>Initial Market Cap</h4>
+            <p>$15M USD</p>
+          </div>
+          <div class="token-detail-item">
+            <h4>Token Type</h4>
+            <p>ERC-20</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Join Our Community</h3>
+            <p>Stay updated with our latest developments and connect with our growing community through our social channels.</p>
+            <div class="contact-links">
+              <a href="https://t.me/interchainsgroupeth" target="_blank" class="contact-link">
+                <i class="fab fa-telegram"></i> Telegram
+              </a>
+              <a href="#" class="contact-link">
+                <i class="fab fa-twitter"></i> Twitter
+              </a>
+              <a href="#" class="contact-link">
+                <i class="fab fa-discord"></i> Discord
+              </a>
+              <a href="#" class="contact-link">
+                <i class="fab fa-medium"></i> Medium
+              </a>
+            </div>
+            <div class="newsletter">
+              <h3>Subscribe to Newsletter</h3>
+              <form id="newsletter-form" class="newsletter-form">
+                <input type="email" placeholder="Your email address" required />
+                <button type="submit" class="btn primary-btn">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="contact-form-container">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Your Email" required />
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Subject" />
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="logo.jpg" alt="Interchains Group Logo" class="logo-img" />
+            <h3>Interchains Group</h3>
+          </div>
+          <div class="footer-links">
+            <div class="footer-links-column">
+              <h4>Navigation</h4>
+              <a href="#about">About</a>
+              <a href="#reserves">Reserves</a>
+              <a href="#features">Features</a>
+              <a href="#roadmap">Roadmap</a>
+              <a href="#tokenomics">Tokenomics</a>
+            </div>
+            <div class="footer-links-column">
+              <h4>Resources</h4>
+              <a href="#">Whitepaper</a>
+              <a href="#">Documentation</a>
+              <a href="#">API</a>
+              <a href="#">Press Kit</a>
+            </div>
+            <div class="footer-links-column">
+              <h4>Community</h4>
+              <a href="https://t.me/interchainsgroupeth" target="_blank">Telegram</a>
+              <a href="#" target="_blank">Twitter</a>
+              <a href="#" target="_blank">Discord</a>
+              <a href="#" target="_blank">Medium</a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          © 2025 Interchains Group. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html> 
